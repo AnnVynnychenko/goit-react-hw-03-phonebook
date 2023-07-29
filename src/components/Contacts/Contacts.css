@@ -1,0 +1,10 @@
+.contacts {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 24px;
+}
+
+.titleContacts {
+  margin: 0 0 20px 0;
+  color: blue;
+}

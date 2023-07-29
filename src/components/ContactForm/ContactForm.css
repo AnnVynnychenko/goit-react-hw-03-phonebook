@@ -1,0 +1,65 @@
+.contactForm {
+  width: 400px;
+  padding: 24px;
+}
+
+.contactInput {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 14px;
+  border: 1px solid rgba(41, 22, 255, 0.46);
+  box-shadow: rgba(4, 230, 233, 0.25) 0px 0.0625em 0.0625em,
+    rgba(10, 48, 240, 0.288) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contactInput:is(:hover, :focus) {
+  border-radius: 20px;
+}
+
+.textForm {
+  display: block;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.addContact {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.addContact:after {
+  content: '';
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.addContact:hover:after {
+  top: 0px;
+  left: 0px;
+}
